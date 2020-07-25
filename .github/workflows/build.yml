@@ -30,19 +30,10 @@ jobs:
       run: |
         yarn install
         yarn build
-  
-    - name: Zip on Ubuntu
-      uses: nguyenquyhy/zip-release@v0.3.0
-      with:
-        # Filename for archive
-        filename: build.zip
-        # Base path for archive files
-        path: build
-        # Working directory before zipping
-        workingDirectory: .
+        
     - name: Upload
       uses: actions/upload-artifact@v2
       with:
-        name: Output
-        path: build.zip
+        name: build
+        path: build/*
       
