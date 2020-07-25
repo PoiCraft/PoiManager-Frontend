@@ -157,6 +157,7 @@ const Console: React.FC = () => {
     window.websocketConn?.send(
       JSON.stringify({ token, cmd: commandInputValue })
     )
+    setCommandInputValue('')
   }
 
   React.useEffect(() => {
