@@ -30,9 +30,18 @@ jobs:
       run: |
         yarn install
         yarn build
-        apt install tar -y
-        tar -cf build.tar.gz build/*
   
+    - name: Zip on Ubuntu
+      uses: nguyenquyhy/zip-release@v0.3.0
+      with:
+        # Filename for archive
+        filename: build.zip
+        # Base path for archive files
+        path: .
+        # Working directory before zipping
+        workingDirectory: .
+        # List of excluded files/directories
+        exclusions: build
     - name: Upload
       uses: actions/upload-artifact@v2
       with:
