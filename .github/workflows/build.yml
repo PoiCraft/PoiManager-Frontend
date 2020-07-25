@@ -37,11 +37,9 @@ jobs:
         # Filename for archive
         filename: build.zip
         # Base path for archive files
-        path: .
+        path: build
         # Working directory before zipping
         workingDirectory: .
-        # List of excluded files/directories
-        exclusions: build
     - name: Upload
       uses: actions/upload-artifact@v2
       with:
