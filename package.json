@@ -2,7 +2,6 @@
   "name": "poimanager-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:5500/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -15,12 +14,14 @@
     "@types/react-dom": "^16.9.0",
     "axios": "^0.19.2",
     "clsx": "^1.1.1",
+    "http-proxy-middleware": "^1.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "typescript": "~3.7.2",
+    "xterm-addon-fit": "^0.4.0",
     "xterm-for-react": "^1.0.4"
   },
   "scripts": {

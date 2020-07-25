@@ -1,5 +1,5 @@
 export interface Log {
-  log: string, 
-  time: string, 
-  type: "bds" | "input_in"
+  log: string
+  time: string
+  type: 'bds' | 'cmd_in'
 }
