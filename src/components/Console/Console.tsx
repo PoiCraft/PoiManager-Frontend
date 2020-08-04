@@ -125,12 +125,8 @@ const Console: React.FC = () => {
           setTokenDialogOpen(true)
         }
         break
-      case 'cmd_in':
+      default:
         termRef.current?.terminal.writeln(`${red}${res.type}: ${end}${res.msg}`)
-        break
-      case 'bds':
-        termRef.current?.terminal.writeln(`${red}${res.type}: ${end}${res.msg}`)
-        break
     }
   }
 
